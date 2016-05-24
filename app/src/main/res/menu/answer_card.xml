@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.ShowNoteActivity">
+
+    <item
+        android:id="@+id/edit"
+        android:title="Edit"
+        android:orderInCategory="100"
+        android:icon="@drawable/abc_ic_cab_done_holo_dark"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_action_about"
+        app:showAsAction="always" />
+</menu>
