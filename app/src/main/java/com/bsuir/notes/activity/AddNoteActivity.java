@@ -90,27 +90,6 @@ public class AddNoteActivity extends ActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.about) {
-            AlertDialog.Builder localBuilder = new AlertDialog.Builder(this);
-            View localView = getLayoutInflater().inflate(R.layout.about, null);
-            TextView localTextView1 = (TextView) localView.findViewById(R.id.title);
-            Typeface localTypeface = Typeface.createFromAsset(getAssets(), "Roboto-Thin.ttf");
-            TextView localTextView2 = (TextView) localView.findViewById(R.id.content);
-            SpannableString localSpannableString = new SpannableString(Constants.ABOUT_INFO);
-
-            localTextView1.setTypeface(localTypeface);
-            Linkify.addLinks(localSpannableString, 15);
-            localTextView2.setTypeface(localTypeface);
-            localTextView2.setText(localSpannableString);
-
-            localBuilder.setView(localView).setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface paramAnonymousDialogInterface, int paramAnonymousInt) {
-                }
-            });
-
-            localBuilder.show();
-            return true;
-        }
         return super.onOptionsItemSelected(item);
     }
 

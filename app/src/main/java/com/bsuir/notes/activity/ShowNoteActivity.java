@@ -79,26 +79,7 @@ public class ShowNoteActivity extends ActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.about) {
-            AlertDialog.Builder localBuilder = new AlertDialog.Builder(this);
-            View localView = getLayoutInflater().inflate(R.layout.about, null);
-            TextView localTextView1 = (TextView) localView.findViewById(R.id.title);
-            TextView localTextView2 = (TextView) localView.findViewById(R.id.content);
-            SpannableString localSpannableString = new SpannableString(Constants.ABOUT_INFO);
-
-            localTextView1.setTypeface(typeFace);
-            Linkify.addLinks(localSpannableString, 15);
-            localTextView2.setTypeface(typeFace);
-            localTextView2.setText(localSpannableString);
-
-            localBuilder.setView(localView).setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface paramAnonymousDialogInterface, int paramAnonymousInt) {
-                }
-            });
-
-            localBuilder.show();
-            return true;
-        } else if (id == R.id.edit) {
+        if (id == R.id.edit) {
             AlertDialog.Builder localBuilder = new AlertDialog.Builder(this);
             View localView = getLayoutInflater().inflate(R.layout.edite_note, null);
 

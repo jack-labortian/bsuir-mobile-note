@@ -9,11 +9,4 @@
         android:orderInCategory="100"
         android:icon="@drawable/abc_ic_cab_done_holo_dark"
         app:showAsAction="always" />
-
-    <item
-        android:id="@+id/about"
-        android:title="About"
-        android:orderInCategory="101"
-        android:icon="@drawable/ic_action_about"
-        app:showAsAction="always" />
 </menu>

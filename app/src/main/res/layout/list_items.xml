@@ -6,25 +6,24 @@
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
     android:layout_marginRight="@dimen/activity_horizontal_margin"
     android:orientation="vertical"
-    android:background="#E0EEEE"
     android:weightSum="1">
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:background="@drawable/card"
         android:padding="5dp"
-        android:layout_height="59dp"
-        android:layout_weight="0.02">
+        android:layout_height="100dp"
+        android:longClickable="false"
+        android:layout_weight="0.26">
 
         <TextView
             android:id="@+id/title"
-            android:text="title"
-            android:textSize="32dp"
+            android:text="@string/titleNote"
+            android:textSize="32sp"
             android:padding="5dp"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/separator"
-            android:layout_alignParentBottom="true"
             android:textStyle="italic" />
 
         <View

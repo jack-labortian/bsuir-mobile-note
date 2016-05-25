@@ -2,11 +2,4 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".activity.AddNoteActivity">
 
-    <item
-        android:id="@+id/about"
-        android:title="About"
-        android:orderInCategory="101"
-        android:icon="@drawable/ic_action_about"
-
-        />
 </menu>

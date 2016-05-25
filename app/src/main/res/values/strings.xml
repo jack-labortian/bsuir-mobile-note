@@ -9,5 +9,6 @@
     <string name="title_activity_answer_card">AnswerCard</string>
     <string name="title">Title</string>
     <string name="content_goes_here_which_will_be_a_lot">Content goes here which will be a lot</string>
+    <string name="titleNote">title</string>
 
 </resources>

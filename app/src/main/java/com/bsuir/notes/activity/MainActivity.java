@@ -151,24 +151,6 @@ public class MainActivity extends ActionBarActivity {
             startActivity(new Intent(this, AddNoteActivity.class));
             return true;
         }
-        if (i == R.id.about) {
-            AlertDialog.Builder localBuilder = new AlertDialog.Builder(this);
-            View localView = getLayoutInflater().inflate(R.layout.about, null);
-            TextView localTextView1 = (TextView) localView.findViewById(R.id.title);
-            Typeface localTypeface = Typeface.createFromAsset(getAssets(), "Roboto-Thin.ttf");
-            localTextView1.setTypeface(localTypeface);
-            TextView localTextView2 = (TextView) localView.findViewById(R.id.content);
-            SpannableString localSpannableString = new SpannableString(Constants.ABOUT_INFO);
-            Linkify.addLinks(localSpannableString, 15);
-            localTextView2.setTypeface(localTypeface);
-            localTextView2.setText(localSpannableString);
-            localBuilder.setView(localView).setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface paramAnonymousDialogInterface, int paramAnonymousInt) {
-                }
-            });
-            localBuilder.show();
-            return true;
-        }
         return super.onOptionsItemSelected(paramMenuItem);
     }
 
